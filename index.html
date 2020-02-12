@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UFO Sightings</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+                integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+                crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+      
+</head> 
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h2>UFO SIGHTINGS</h2>
+          </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class = "col-md-3">
+                <form id="Date_List">
+                    <fieldset>
+                        <p>
+                            <label>Select Date</label>
+                        <br>
+                            <select id = "selDate">
+                                <Option value="" >Date list</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                </form>
+
+            </div>
+            <div class = "col-md-3">
+                <form id="State_List">
+                    <fieldset>
+                        <p>
+                            <label>Select State</label>
+                        <br>
+                            <select id = "selState">
+                                <Option value="" >State list</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+            <div class = "col-md-3">
+                <form id="City_List">
+                    <fieldset>
+                        <p>
+                            <label>City</label>
+                        <br>
+                            <select id = "selCity">
+                                <Option value="" >City list</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+            <div class = "col-md-3">
+                <form id="Shape_List">
+                    <fieldset>
+                        <p>
+                            <label>Shape</label>
+                        <br>
+                            <select id = "selShape">
+                                <Option value="" >Shape list</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+            
+        </nav>
+    </div>
+    
+</div>
+</div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <table id='mainTable'>
+                <thead>
+                    <tr>
+                        <th class="text-center">date/time</th>
+                        <th class="text-center">city     </th>
+                        <th class="text-center">state    </th>
+                        <th class="text-center">country  </th>
+                        <th class="text-center">shape    </th>
+                        <th class="text-center">comment  </th>
+                    </tr> 
+                </thead>
+                <tbody></tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</body> 
+<script src="static/js/data.js"></script> 
+<script src="static/js/app.js"></script> 
+
+</html>
